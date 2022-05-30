@@ -1,0 +1,115 @@
+MainScreen As screen:
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+
+    Label2 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =72
+        Size: =30
+        Text: ="Witaj w aplikacji!"
+        Width: =800
+        X: =283
+        Y: =124
+        ZIndex: =1
+
+    Rectangle1 As rectangle:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Fill: =RGBA(204, 204, 204, 1)
+        Height: =409
+        Width: =461
+        X: =435
+        Y: =234
+        ZIndex: =4
+
+    Label5 As label:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
+        Text: |-
+            ="Login:"
+        X: =494
+        Y: =294
+        ZIndex: =5
+
+    TextInput1 As text:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        HintText: ="wpisz login"
+        HoverBorderColor: =RGBA(32, 54, 71, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(205, 209, 213, 1)
+        Size: =13
+        X: =494
+        Y: =334
+        ZIndex: =6
+
+    Label5_1 As label:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
+        Text: |-
+            ="Hasło:
+            "
+        X: =494
+        Y: =420
+        ZIndex: =7
+
+    TextInput1_1 As text:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        HintText: ="wpisz hasło"
+        HoverBorderColor: =RGBA(32, 54, 71, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(205, 209, 213, 1)
+        Size: =13
+        X: =494
+        Y: =460
+        ZIndex: =8
+
+    Button2 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        FontWeight: =FontWeight.Semibold
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: =Navigate(ZalogowanyScreen)
+        Size: =15
+        Text: ="Zaloguj się!"
+        X: =574
+        Y: =557
+        ZIndex: =9
+
+    Label6 As label:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(0, 94, 146, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =33
+        Size: =13
+        Text: ="Nie pamiętam hasła"
+        Width: =231
+        X: =608
+        Y: =597
+        ZIndex: =10
+
+    Component1_1 As HeaderMain:
+        Title: ="Firma Ochroniarska - Security Group"
+        ZIndex: =11
+

@@ -1,0 +1,46 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+    "CdpRevision": {
+      "BaseUrl": "/",
+      "LastChangedTimeString": "2022-04-21T17:15:39.7520000Z",
+      "RevisionNumber": 1
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "{Attachments}": "Załączniki",
+      "{Attachments}@odata.type": "{Attachments} ({Attachments}@odata.type)",
+      "{FilenameWithExtension}": "Nazwa pliku z rozszerzeniem",
+      "{FullPath}": "Pełna ścieżka",
+      "{HasAttachments}": "Ma załączniki",
+      "{Identifier}": "Identyfikator",
+      "{IsFolder}": "JestFolderem",
+      "{Link}": "Link do elementu",
+      "{ModerationComment}": "Komentarze skojarzone z zatwierdzaniem zawartości tego elementu listy",
+      "{ModerationStatus}": "Stan zatwierdzania zawartości",
+      "{Name}": "Nazwa",
+      "{Path}": "Ścieżka folderu",
+      "{Thumbnail}": "Thumbnail",
+      "{TriggerWindowEndToken}": "Token końca przedziału czasu",
+      "{TriggerWindowStartToken}": "Token początku przedziału czasu",
+      "{VersionNumber}": "Numer wersji",
+      "Author": "Created By",
+      "Author#Claims": "Created By Claims",
+      "ComplianceAssetId": "Compliance Asset Id",
+      "Created": "Created",
+      "data_zamowienia": "data_zamowienia",
+      "Editor": "Modified By",
+      "Editor#Claims": "Modified By Claims",
+      "ID": "ID",
+      "Modified": "Modified",
+      "opis_sytuacji": "opis_sytuacji",
+      "skad": "adres_interwencji",
+      "Title": "Title"
+    },
+    "DatasetName": "https://workuwmedu.sharepoint.com/sites/FirmaOchroniarska",
+    "EncodeDataset": true,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "interwencja",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]

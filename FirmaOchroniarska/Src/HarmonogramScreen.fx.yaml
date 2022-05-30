@@ -1,0 +1,183 @@
+HarmonogramScreen As screen:
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+
+    HeaderMain_5 As HeaderMain:
+        homeBTN: =Navigate(ZalogowanyScreen)
+        Title: ="Harmonogram"
+
+    Label10 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =63
+        Size: =20
+        Text: ="Harmonogram na najbliższe dwa tygodnie"
+        Width: =1366
+        Y: =100
+        ZIndex: =2
+
+    Gallery3 As gallery.galleryHorizontal:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Height: =47
+        Items: =["Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota", "Niedziela"]
+        TemplateSize: =132
+        Width: =968
+        X: =282
+        Y: =163
+        ZIndex: =4
+
+        Label14 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(102, 182, 227, 1)
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.Value
+            Width: =128
+            ZIndex: =1
+
+    Gallery4 As gallery.galleryVertical:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Height: =507
+        Items: =pracownicy
+        Layout: =Layout.Vertical
+        ShowScrollbar: =false
+        TemplateSize: =109
+        Width: =1132
+        X: =116
+        Y: =210
+        ZIndex: =5
+
+        Label16 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.Title
+            Y: =20
+            ZIndex: =1
+
+        Label17 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(152, 208, 70, 1)
+            Height: =57
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: ="Wolny"
+            Width: =120
+            X: =167
+            Y: =11
+            ZIndex: =2
+
+        Label17_1 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(152, 208, 70, 1)
+            Height: =57
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: ="Wolny"
+            Width: =120
+            X: =305
+            Y: =11
+            ZIndex: =3
+
+        Label17_2 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(152, 208, 70, 1)
+            Height: =57
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: ="Wolny"
+            Width: =120
+            X: =439
+            Y: =11
+            ZIndex: =4
+
+        Label17_3 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: |-
+                =If(
+                    ThisItem.stanowisko = "Pracownik biurowy",
+                    RGBA(
+                        221,
+                        79,
+                        14,
+                        1
+                    ),
+                    RGBA(
+                        152,
+                        208,
+                        70,
+                        1
+                    )
+                )
+            Height: =57
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =If(ThisItem.stanowisko = "Pracownik biurowy", "Zajęty", "Wolny")
+            Width: =120
+            X: =581
+            Y: =11
+            ZIndex: =5
+
+        Label17_6 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(152, 208, 70, 1)
+            Height: =57
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: ="Wolny"
+            Width: =120
+            X: =716
+            Y: =11
+            ZIndex: =8
+
+        Label17_7 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: |-
+                =
+                
+                If(ThisItem.stanowisko = "Pracownik biurowy", RGBA(221, 79, 14, 1), RGBA(152, 208, 70, 1))
+            Height: =57
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =If(ThisItem.stanowisko = "Pracownik biurowy", "Zajęty", "Wolny")
+            Width: =120
+            X: =853
+            Y: =11
+            ZIndex: =9
+
+        Label17_8 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: |-
+                =
+                
+                If(ThisItem.stanowisko = "Pracownik biurowy", RGBA(221, 79, 14, 1), RGBA(152, 208, 70, 1))
+            Height: =57
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =If(ThisItem.stanowisko = "Pracownik biurowy", "Zajęty", "Wolny")
+            Width: =120
+            X: =991
+            Y: =11
+            ZIndex: =10
+

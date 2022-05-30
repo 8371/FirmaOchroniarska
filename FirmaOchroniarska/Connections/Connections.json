@@ -1,0 +1,42 @@
+{
+  "5f3b22d8-677d-4946-b4de-d437d47e336a": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1568/1.0.1568.2757/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://workuwmedu.sharepoint.com/sites/FirmaOchroniarska": {
+        "dataSources": {
+          "interwencja": {
+            "tableName": "2801abfe-bc1d-4b70-bd90-6b64b619b78f"
+          },
+          "konwoj": {
+            "tableName": "31c5d585-75cf-44e4-9356-5b800c4eeca1"
+          }
+        }
+      },
+      "https://workuwmedu.sharepoint.com/sites/FirmaOchroniarska/": {
+        "dataSources": {
+          "pracownicy": {
+            "tableName": "2101c419-4d39-4d71-8fa4-1b82e9c8d8f1"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "konwoj",
+      "interwencja",
+      "pracownicy"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "5f3b22d8-677d-4946-b4de-d437d47e336a"
+  }
+}
