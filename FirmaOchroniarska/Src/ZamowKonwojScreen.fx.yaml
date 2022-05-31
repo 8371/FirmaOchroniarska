@@ -48,7 +48,12 @@ ZamowKonwojScreen As screen:
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
                 Size: =13
-                Text: ="Nazwa klienta"
+                Text: |
+                    =If(
+                        czy_edycja = false,
+                        "Nazwa klienta:",
+                        "Nazwa klienta"
+                    )
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =28
@@ -139,7 +144,12 @@ ZamowKonwojScreen As screen:
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
                 Size: =13
-                Text: =Parent.DisplayName
+                Text: |
+                    =If(
+                        czy_edycja = false,
+                        "Typ towaru:",
+                        "Typ towaru"
+                    )
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -205,7 +215,12 @@ ZamowKonwojScreen As screen:
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
                 Size: =13
-                Text: ="Wartość towaru"
+                Text: |
+                    =If(
+                        czy_edycja = false,
+                        "Wartość towaru:",
+                        "Wartość towaru"
+                    )
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -298,7 +313,12 @@ ZamowKonwojScreen As screen:
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
                 Size: =13
-                Text: ="Miejsce Odebrania"
+                Text: |
+                    =If(
+                        czy_edycja = false,
+                        "Miejsce odebrania:",
+                        "Miejsce odebrania"
+                    )
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -391,7 +411,12 @@ ZamowKonwojScreen As screen:
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
                 Size: =13
-                Text: ="Miejsce dostarczenia"
+                Text: |
+                    =If(
+                        czy_edycja = false,
+                        "Miejsce dostarczenia:",
+                        "Miejsce dostarczenia"
+                    )
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -483,7 +508,12 @@ ZamowKonwojScreen As screen:
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
                 Size: =13
-                Text: ="Data zamówienia"
+                Text: |
+                    =If(
+                        czy_edycja = false,
+                        "Data zamówienia:",
+                        "Data zamówienia"
+                    )
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
