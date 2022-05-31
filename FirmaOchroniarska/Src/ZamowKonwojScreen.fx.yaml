@@ -14,7 +14,7 @@ ZamowKonwojScreen As screen:
         NumberOfColumns: =1
         Width: =476
         X: =445
-        Y: =113
+        Y: =100
         ZIndex: =2
 
         Title_DataCard1 As typedDataCard.textualEditCard:
@@ -117,7 +117,7 @@ ZamowKonwojScreen As screen:
             Update: =DataCardValue10.Selected
             Width: =476
             X: =0
-            Y: =5
+            Y: =1
             ZIndex: =1
 
             DataCardKey10 As label:
@@ -130,7 +130,7 @@ ZamowKonwojScreen As screen:
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
-                Y: =10
+                Y: =2
                 ZIndex: =1
 
             DataCardValue10 As combobox:
@@ -178,7 +178,7 @@ ZamowKonwojScreen As screen:
             Update: =DataCardValue2.Text
             Width: =476
             X: =0
-            Y: =1
+            Y: =2
             ZIndex: =1
 
             DataCardKey2 As label:
@@ -266,7 +266,7 @@ ZamowKonwojScreen As screen:
             Update: =DataCardValue4.Text
             Width: =476
             X: =0
-            Y: =2
+            Y: =3
             ZIndex: =1
 
             DataCardKey4 As label:
@@ -354,7 +354,7 @@ ZamowKonwojScreen As screen:
             Update: =DataCardValue3.Text
             Width: =476
             X: =0
-            Y: =3
+            Y: =4
             ZIndex: =1
 
             DataCardKey3 As label:
@@ -441,7 +441,7 @@ ZamowKonwojScreen As screen:
             Update: =DataCardValue5.SelectedDate
             Width: =476
             X: =0
-            Y: =4
+            Y: =5
             ZIndex: =1
 
             DataCardKey5 As label:
@@ -521,7 +521,7 @@ ZamowKonwojScreen As screen:
         OnSelect: =SubmitForm(formKonwoj)
         Size: =15
         Text: ="Wyślij"
-        X: =603
-        Y: =618
+        X: =732
+        Y: =696
         ZIndex: =3
 
