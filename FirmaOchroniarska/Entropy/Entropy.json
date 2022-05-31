@@ -16,6 +16,7 @@
     "Button5_1": 33,
     "Button6": 36,
     "Button6_1": 66,
+    "Button8": 206,
     "Component1_1": 88,
     "data_zamowienia_DataCard1": 61,
     "data_zamowienia_DataCard2": 28,
@@ -209,7 +210,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "05/31/2022 18:26:52",
+  "HeaderLastSavedDateTimeUTC": "05/31/2022 18:29:57",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "5f3b22d8-677d-4946-b4de-d437d47e336a": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/27e9a83a86f74498860bf9377d156a0f\""
@@ -265,6 +266,7 @@
     "Button5_1": 149,
     "Button6": 172,
     "Button6_1": 174,
+    "Button8": 0,
     "Component1_1": 29,
     "data_zamowienia_DataCard1": 181,
     "data_zamowienia_DataCard2": 153,
@@ -485,7 +487,7 @@
       "typedDataCard": 23
     },
     "DeserializationLoadTime": 1.3821075,
-    "ErrorCount": 1
+    "ErrorCount": 0
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
