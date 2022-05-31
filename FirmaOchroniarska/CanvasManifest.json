@@ -102,6 +102,7 @@
     "MainScreen",
     "ZalogowanyScreen",
     "ZamowKonwojScreen",
+    "PodsumowanieKonwojScreen",
     "ZamowInterwencjeScreen",
     "KontaktScreen",
     "HarmonogramScreen",

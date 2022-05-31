@@ -1,0 +1,8 @@
+PodsumowanieKonwojScreen As screen:
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+
+    HeaderMain_8 As HeaderMain:
+        homeBTN: =Navigate(ZalogowanyScreen)
+        Title: ="Zamówenie Konwoju"
+        uprawnienie: =uprawnienie
+
