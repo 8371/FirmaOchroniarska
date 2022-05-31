@@ -1,9 +1,16 @@
 ZamowKonwojScreen As screen:
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    OnVisible: |-
+        =UpdateContext({czy_edycja:true})
 
     HeaderMain_2 As HeaderMain:
         homeBTN: =Navigate(ZalogowanyScreen)
-        Title: ="Zamówenie Konwoju"
+        Title: |
+            =If(
+                czy_edycja = true,
+                "Zamówienie konwoju",
+                "Podsumowanie zamówienia"
+            )
         uprawnienie: =uprawnienie
 
     formKonwoj As form:
@@ -46,7 +53,12 @@ ZamowKonwojScreen As screen:
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
                 Size: =13
-                Text: ="Nazwa klienta"
+                Text: |
+                    =If(
+                        czy_edycja = false,
+                        "Nazwa klienta:",
+                        "Nazwa klienta"
+                    )
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =28
@@ -115,7 +127,12 @@ ZamowKonwojScreen As screen:
             BorderStyle: =BorderStyle.Solid
             DataField: ="typ_towaru"
             Default: =ThisItem.typ_towaru
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: |-
+                =If(
+                    czy_edycja = true,
+                    DisplayMode.Edit,
+                    DisplayMode.View
+                )
             DisplayName: =DataSourceInfo([@konwoj],DataSourceInfo.DisplayName,"typ_towaru")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -132,7 +149,12 @@ ZamowKonwojScreen As screen:
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
                 Size: =13
-                Text: =Parent.DisplayName
+                Text: |
+                    =If(
+                        czy_edycja = false,
+                        "Typ towaru:",
+                        "Typ towaru"
+                    )
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -175,7 +197,12 @@ ZamowKonwojScreen As screen:
             BorderStyle: =BorderStyle.Solid
             DataField: ="wartosc_towaru"
             Default: =ThisItem.wartosc_towaru
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: |
+                =If(
+                    czy_edycja = true,
+                    DisplayMode.Edit,
+                    DisplayMode.View
+                )
             DisplayName: =DataSourceInfo([@konwoj],DataSourceInfo.DisplayName,"wartosc_towaru")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -193,7 +220,12 @@ ZamowKonwojScreen As screen:
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
                 Size: =13
-                Text: ="Wartość towaru"
+                Text: |
+                    =If(
+                        czy_edycja = false,
+                        "Wartość towaru:",
+                        "Wartość towaru"
+                    )
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -263,7 +295,12 @@ ZamowKonwojScreen As screen:
             BorderStyle: =BorderStyle.Solid
             DataField: ="skad"
             Default: =ThisItem.skad
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: |
+                =If(
+                    czy_edycja = true,
+                    DisplayMode.Edit,
+                    DisplayMode.View
+                )
             DisplayName: =DataSourceInfo([@konwoj],DataSourceInfo.DisplayName,"skad")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -281,7 +318,12 @@ ZamowKonwojScreen As screen:
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
                 Size: =13
-                Text: ="Miejsce Odebrania"
+                Text: |
+                    =If(
+                        czy_edycja = false,
+                        "Miejsce odebrania:",
+                        "Miejsce odebrania"
+                    )
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -351,7 +393,12 @@ ZamowKonwojScreen As screen:
             BorderStyle: =BorderStyle.Solid
             DataField: ="dokad"
             Default: =ThisItem.dokad
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: |
+                =If(
+                    czy_edycja = true,
+                    DisplayMode.Edit,
+                    DisplayMode.View
+                )
             DisplayName: =DataSourceInfo([@konwoj],DataSourceInfo.DisplayName,"dokad")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -369,7 +416,12 @@ ZamowKonwojScreen As screen:
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
                 Size: =13
-                Text: ="Miejsce dostarczenia"
+                Text: |
+                    =If(
+                        czy_edycja = false,
+                        "Miejsce dostarczenia:",
+                        "Miejsce dostarczenia"
+                    )
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -439,7 +491,12 @@ ZamowKonwojScreen As screen:
             BorderStyle: =BorderStyle.Solid
             DataField: ="data_zamowienia"
             Default: =ThisItem.data_zamowienia
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: |
+                =If(
+                    czy_edycja = true,
+                    DisplayMode.Edit,
+                    DisplayMode.View
+                )
             DisplayName: =DataSourceInfo([@konwoj],DataSourceInfo.DisplayName,"data_zamowienia")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -456,7 +513,12 @@ ZamowKonwojScreen As screen:
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
                 Size: =13
-                Text: ="Data zamówienia"
+                Text: |
+                    =If(
+                        czy_edycja = false,
+                        "Data zamówienia:",
+                        "Data zamówienia"
+                    )
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -524,9 +586,7 @@ ZamowKonwojScreen As screen:
         FontWeight: =FontWeight.Semibold
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: |-
-            =SubmitForm(formKonwoj)+
-            Navigate(PodsumowanieKonwojScreen)
+        OnSelect: =SubmitForm(formKonwoj)
         Size: =15
         Text: ="Wyślij"
         Visible: =!czy_edycja
@@ -546,9 +606,12 @@ ZamowKonwojScreen As screen:
             =UpdateContext({czy_edycja:true})
         Size: =15
         Text: |-
-            ="True
+            ="Edytuj
             "
-        X: =510
+        Visible: |-
+            =!
+            czy_edycja
+        X: =474
         Y: =696
         ZIndex: =4
 
@@ -563,8 +626,9 @@ ZamowKonwojScreen As screen:
         OnSelect: |-
             =UpdateContext({czy_edycja:false})
         Size: =15
-        Text: ="Fal"
-        X: =316
+        Text: ="Podsumowanie"
+        Visible: =czy_edycja
+        X: =732
         Y: =696
         ZIndex: =5
 
