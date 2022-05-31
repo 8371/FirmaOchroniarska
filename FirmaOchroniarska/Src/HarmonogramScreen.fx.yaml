@@ -110,6 +110,21 @@ HarmonogramScreen As screen:
                 Width: =128
                 ZIndex: =1
 
+        Label15 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(184, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =If(IsBlank(LookUp(harmonogram, Title = ThisItem.Title).Title),RGBA(185, 188, 192, 50%), RGBA(185, 188, 192, 0))
+            FontWeight: =FontWeight.Bold
+            Height: =166
+            OnSelect: =Select(Parent)
+            Size: =25
+            Text: ="Brak uzupełnionego harmonogramu"
+            Width: =972
+            X: =150
+            ZIndex: =12
+
     dateHarmonogramGlowny As datepicker:
         BorderColor: =RGBA(32, 54, 71, 1)
         CalendarHeaderFill: =RGBA(100, 118, 132, 1)
