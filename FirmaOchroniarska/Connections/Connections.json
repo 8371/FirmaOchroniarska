@@ -38,5 +38,30 @@
     "dependencies": {},
     "dependents": [],
     "id": "5f3b22d8-677d-4946-b4de-d437d47e336a"
+  },
+  "84c3eccd-6c8d-40c8-9b9d-deb3c3a6b40e": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1568/1.0.1568.2757/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://workuwmedu.sharepoint.com/sites/FirmaOchroniarska": {
+        "dataSources": {
+          "harmonogram": {
+            "tableName": "35700c12-c6f9-4687-ac6d-a0c7a0d45765"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "harmonogram"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "84c3eccd-6c8d-40c8-9b9d-deb3c3a6b40e"
   }
 }
