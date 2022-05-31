@@ -38,6 +38,14 @@
           "InvariantPropertyName": "homeBTN",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"default\"",
+          "InvariantPropertyName": "uprawnienie",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "HasDynamicProperties": false,
@@ -61,6 +69,11 @@
         {
           "Category": "Data",
           "PropertyName": "Title",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "uprawnienie",
           "RuleProviderType": "Unknown"
         },
         {

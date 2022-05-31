@@ -4,6 +4,7 @@ ZalogowanyScreen As screen:
     HeaderMain_1 As HeaderMain:
         homeBTN: =Navigate(MainScreen)
         Title: ="Zalogowany"
+        uprawnienie: =uprawnienie
 
     Gallery1 As gallery.galleryHorizontal:
         BorderColor: =RGBA(32, 54, 71, 1)
@@ -58,4 +59,83 @@ ZalogowanyScreen As screen:
             X: =48
             Y: =4
             ZIndex: =1
+
+    Label3 As label:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =63
+        Size: =13
+        Text: ="Tymczasowe uprawnienia do wyboru"
+        Width: =171
+        X: =20
+        Y: =337
+        ZIndex: =3
+
+    Button1 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        FontWeight: =FontWeight.Semibold
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: =Set(uprawnienie, "Klient")
+        Size: =12
+        Text: ="Klient"
+        Width: =136
+        X: =20
+        Y: =415
+        ZIndex: =4
+
+    Button1_1 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =60
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: =Set(uprawnienie, "Pracownik biurowy")
+        Size: =12
+        Text: ="Pracownik Biurowy"
+        Width: =136
+        X: =20
+        Y: =470
+        ZIndex: =5
+
+    Button1_2 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =60
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: =Set(uprawnienie, "Pracownik ochrony")
+        Size: =12
+        Text: ="Pracownik Ochrony"
+        Width: =136
+        X: =20
+        Y: =539
+        ZIndex: =6
+
+    Button1_3 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: =Set(uprawnienie, "Operator stacji monitorowania")
+        Size: =12
+        Text: ="Operator stacji monitorowania"
+        Width: =136
+        X: =20
+        Y: =618
+        ZIndex: =7
 

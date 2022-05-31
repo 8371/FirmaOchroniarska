@@ -4,6 +4,7 @@ KontaktScreen As screen:
     HeaderMain_4 As HeaderMain:
         homeBTN: =Navigate(MainScreen)
         Title: ="Kontakt"
+        uprawnienie: =uprawnienie
 
     Label9 As label:
         Align: =Align.Center

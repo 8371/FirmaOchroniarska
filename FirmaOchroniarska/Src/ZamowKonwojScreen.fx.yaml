@@ -4,6 +4,7 @@ ZamowKonwojScreen As screen:
     HeaderMain_2 As HeaderMain:
         homeBTN: =Navigate(ZalogowanyScreen)
         Title: ="Zamówenie Konwoju"
+        uprawnienie: =uprawnienie
 
     formKonwoj As form:
         BorderColor: =RGBA(32, 54, 71, 1)
