@@ -111,5 +111,6 @@ MainScreen As screen:
 
     Component1_1 As HeaderMain:
         Title: ="Firma Ochroniarska - Security Group"
+        uprawnienie: =uprawnienie
         ZIndex: =11
 

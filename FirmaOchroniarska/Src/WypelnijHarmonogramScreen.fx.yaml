@@ -19,7 +19,7 @@ WypelnijHarmonogramScreen As screen:
         Y: =100
         ZIndex: =2
 
-    Gallery3_1 As gallery.galleryHorizontal:
+    galHarmonogram1 As gallery.galleryHorizontal:
         BorderColor: =RGBA(32, 54, 71, 1)
         Height: =147
         Items: |-
@@ -38,7 +38,7 @@ WypelnijHarmonogramScreen As screen:
         Y: =244
         ZIndex: =3
 
-        Label14_1 As label:
+        lblDzien As label:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -50,7 +50,7 @@ WypelnijHarmonogramScreen As screen:
             Width: =128
             ZIndex: =1
 
-        TextInput4 As text:
+        txtDataInput As text:
             BorderColor: =RGBA(32, 54, 71, 1)
             BorderThickness: =2
             Color: =RGBA(0, 0, 0, 1)
@@ -80,11 +80,11 @@ WypelnijHarmonogramScreen As screen:
         IconBackground: =RGBA(100, 118, 132, 1)
         SelectedDateFill: =RGBA(100, 118, 132, 1)
         Width: =198
-        X: =584
+        X: =568
         Y: =163
         ZIndex: =4
 
-    Gallery3_2 As gallery.galleryHorizontal:
+    galHarmonogram2 As gallery.galleryHorizontal:
         BorderColor: =RGBA(32, 54, 71, 1)
         Height: =118
         Items: |-
@@ -103,34 +103,14 @@ WypelnijHarmonogramScreen As screen:
         Y: =441
         ZIndex: =6
 
-        Label14_2 As label:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(102, 182, 227, 1)
-            Height: =46
-            OnSelect: =Select(Parent)
-            Size: =13
-            Text: =ThisItem.Value
-            Width: =128
-            ZIndex: =1
-
-        TextInput4_1 As text:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            BorderThickness: =2
-            Color: =RGBA(0, 0, 0, 1)
-            Default: =""
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            FocusedBorderThickness: =4
-            HintText: ="wpisz godziny dostępności"
-            HoverBorderColor: =RGBA(32, 54, 71, 1)
-            HoverColor: =RGBA(0, 0, 0, 1)
-            HoverFill: =RGBA(205, 209, 213, 1)
-            OnSelect: =Select(Parent)
-            Size: =13
-            Width: =132
-            Y: =59
-            ZIndex: =2
+    Label1 As label:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =412
+        Size: =13
+        Text: =harmonogram_daty
+        Width: =234
+        Y: =321
+        ZIndex: =8
 
