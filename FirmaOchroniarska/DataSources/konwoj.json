@@ -35,6 +35,8 @@
       "Modified": "Modified",
       "skad": "skad",
       "Title": "Title",
+      "typ_towaru": "typ_towaru",
+      "typ_towaru#Id": "typ_towaru Id",
       "wartosc_towaru": "wartosc_towaru"
     },
     "DatasetName": "https://workuwmedu.sharepoint.com/sites/FirmaOchroniarska",

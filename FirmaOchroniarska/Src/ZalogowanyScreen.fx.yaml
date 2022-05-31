@@ -8,7 +8,7 @@ ZalogowanyScreen As screen:
 
     Gallery1 As gallery.galleryHorizontal:
         BorderColor: =RGBA(32, 54, 71, 1)
-        Height: =98
+        Height: =84
         Items: |-
             =[
                 {
@@ -33,11 +33,15 @@ ZalogowanyScreen As screen:
                 }
                 ,
                 {
+                    nazwa: "Upelnij Harmonogram",
+                    screen: WypelnijHarmonogramScreen
+                },
+                {
                     nazwa: "Pracownicy",
                     screen: PracownikScreen
                 }
             ]//; "Zamów ochronę"; "Kontakt"]
-        TemplateSize: =196
+        TemplateSize: =147
         Width: =1351
         Y: =100
         ZIndex: =2
@@ -50,14 +54,14 @@ ZalogowanyScreen As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(204, 204, 204, 1)
             FontWeight: =FontWeight.Bold
-            Height: =64
+            Height: =50
             HoverFill: =ColorFade(Self.Fill, 50%)
             OnSelect: =Navigate(ThisItem.Value.screen)
             Size: =13
             Text: =ThisItem.Value.nazwa
-            Width: =148
-            X: =48
-            Y: =4
+            Width: =142
+            X: =5
+            Y: =10
             ZIndex: =1
 
     Label3 As label:
