@@ -546,9 +546,12 @@ ZamowKonwojScreen As screen:
             =UpdateContext({czy_edycja:true})
         Size: =15
         Text: |-
-            ="True
+            ="Edytuj
             "
-        X: =510
+        Visible: |-
+            =!
+            czy_edycja
+        X: =474
         Y: =696
         ZIndex: =4
 
@@ -563,8 +566,9 @@ ZamowKonwojScreen As screen:
         OnSelect: |-
             =UpdateContext({czy_edycja:false})
         Size: =15
-        Text: ="Fal"
-        X: =316
+        Text: ="Podsumowanie"
+        Visible: =czy_edycja
+        X: =732
         Y: =696
         ZIndex: =5
 
