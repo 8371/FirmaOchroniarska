@@ -33,7 +33,7 @@ ZalogowanyScreen As screen:
                 }
                 ,
                 {
-                    nazwa: "Upelnij Harmonogram",
+                    nazwa: "Uzupełnij Harmonogram",
                     screen: WypelnijHarmonogramScreen
                 },
                 {
