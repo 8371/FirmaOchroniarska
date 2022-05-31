@@ -81,7 +81,6 @@
     "Label10_1": 111,
     "Label13": 105,
     "Label14": 71,
-    "Label14_2": 120,
     "Label16": 81,
     "Label17": 74,
     "Label17_1": 75,
@@ -98,6 +97,7 @@
     "Label8": 130,
     "Label9": 84,
     "lblDzien": 115,
+    "lblDzien2": 120,
     "lblImieNazwisko": 6,
     "lblTytul": 4,
     "lblUprawnienie": 8,
@@ -121,11 +121,11 @@
     "Subtitle1": 104,
     "TextInput1": 90,
     "TextInput1_1": 92,
-    "TextInput4_1": 119,
     "Title_DataCard1": 37,
     "Title_DataCard2": 13,
     "Title1": 102,
     "txtDataInput": 114,
+    "txtDateInput2": 119,
     "typ_towaru_DataCard1": 42,
     "wartosc_towaru_DataCard1": 45,
     "WypelnijHarmonogramScreen": 107,
@@ -135,7 +135,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "05/31/2022 18:03:03",
+  "HeaderLastSavedDateTimeUTC": "05/31/2022 18:20:14",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "5f3b22d8-677d-4946-b4de-d437d47e336a": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/27e9a83a86f74498860bf9377d156a0f\""
@@ -254,7 +254,6 @@
     "Label10_1": 54,
     "Label13": 48,
     "Label14": 15,
-    "Label14_2": 63,
     "Label16": 24,
     "Label17": 17,
     "Label17_1": 18,
@@ -271,6 +270,7 @@
     "Label8": 73,
     "Label9": 27,
     "lblDzien": 60,
+    "lblDzien2": 63,
     "lblImieNazwisko": 4,
     "lblTytul": 2,
     "lblUprawnienie": 6,
@@ -294,11 +294,11 @@
     "Subtitle1": 47,
     "TextInput1": 33,
     "TextInput1_1": 35,
-    "TextInput4_1": 62,
     "Title_DataCard1": 102,
     "Title_DataCard2": 78,
     "Title1": 45,
     "txtDataInput": 59,
+    "txtDateInput2": 62,
     "typ_towaru_DataCard1": 103,
     "wartosc_towaru_DataCard1": 104,
     "WypelnijHarmonogramScreen": 50,
@@ -331,7 +331,7 @@
       "typedDataCard": 10
     },
     "DeserializationLoadTime": 1.4458263,
-    "ErrorCount": 3
+    "ErrorCount": 0
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

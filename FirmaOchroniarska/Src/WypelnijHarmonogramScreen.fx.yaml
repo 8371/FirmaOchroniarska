@@ -103,7 +103,7 @@ WypelnijHarmonogramScreen As screen:
         Y: =441
         ZIndex: =6
 
-        Label14_2 As label:
+        lblDzien2 As label:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -115,7 +115,7 @@ WypelnijHarmonogramScreen As screen:
             Width: =128
             ZIndex: =1
 
-        TextInput4_1 As text:
+        txtDateInput2 As text:
             BorderColor: =RGBA(32, 54, 71, 1)
             BorderThickness: =2
             Color: =RGBA(0, 0, 0, 1)
@@ -144,7 +144,7 @@ WypelnijHarmonogramScreen As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: |-
-            =UpdateContext({harmonogram_daty: Concat(galHarmonogram1.AllItems As _gal1, _gal1.Value & "-" & _gal1.) & Concat(galHarmonogram2.AllItems As _gal2, _gal2.Value)})
+            =UpdateContext({harmonogram_daty: Concat(galHarmonogram1.AllItems As _gal1, Substitute(_gal1.Value, Char(10), "xx") & "-" & _gal1.txtDataInput.Text) & Concat(galHarmonogram2.AllItems As _gal2, _gal2.Value & "-" & _gal2.txtDateInput2.Text)})
         Size: =15
         Text: ="Zapisz dostępność"
         Width: =200
