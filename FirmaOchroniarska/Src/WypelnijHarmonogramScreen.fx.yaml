@@ -19,3 +19,118 @@ WypelnijHarmonogramScreen As screen:
         Y: =100
         ZIndex: =2
 
+    Gallery3_1 As gallery.galleryHorizontal:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Height: =147
+        Items: |-
+            =[
+                "Poniedziałek" & Char(10) & dateDataPoczatkowa.SelectedDate,
+                "Wtorek" & Char(10) & Text(DateAdd(dateDataPoczatkowa.SelectedDate, 1,Days)),
+                "Środa" & Char(10) & Text(DateAdd(dateDataPoczatkowa.SelectedDate, 2,Days)),
+                "Czwartek" & Char(10) & Text(DateAdd(dateDataPoczatkowa.SelectedDate, 3,Days)),
+                "Piątek" & Char(10) & Text(DateAdd(dateDataPoczatkowa.SelectedDate, 4,Days)),
+                "Sobota" & Char(10) & Text(DateAdd(dateDataPoczatkowa.SelectedDate, 5,Days)),
+                "Niedziela" & Char(10)  & Text(DateAdd(dateDataPoczatkowa.SelectedDate, 6,Days)),
+            ]
+        TemplateSize: =132
+        Width: =968
+        X: =210
+        Y: =244
+        ZIndex: =3
+
+        Label14_1 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(102, 182, 227, 1)
+            Height: =46
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.Value
+            Width: =128
+            ZIndex: =1
+
+        TextInput4 As text:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderThickness: =2
+            Color: =RGBA(0, 0, 0, 1)
+            Default: =""
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            FocusedBorderThickness: =4
+            HintText: ="wpisz godziny dostępności"
+            HoverBorderColor: =RGBA(32, 54, 71, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(205, 209, 213, 1)
+            OnSelect: =Select(Parent)
+            Size: =13
+            Width: =132
+            Y: =59
+            ZIndex: =2
+
+    dateDataPoczatkowa As datepicker:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        HoverDateFill: =RGBA(205, 209, 213, 1)
+        IconBackground: =RGBA(100, 118, 132, 1)
+        SelectedDateFill: =RGBA(100, 118, 132, 1)
+        Width: =198
+        X: =584
+        Y: =163
+        ZIndex: =4
+
+    Gallery3_2 As gallery.galleryHorizontal:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Height: =118
+        Items: |-
+            =[
+                "Poniedziałek" & Char(10) & Text(DateAdd(dateDataPoczatkowa.SelectedDate, 7,Days)),
+                "Wtorek" & Char(10) & Text(DateAdd(dateDataPoczatkowa.SelectedDate, 8,Days)),
+                "Środa" & Char(10) & Text(DateAdd(dateDataPoczatkowa.SelectedDate, 9,Days)),
+                "Czwartek" & Char(10) & Text(DateAdd(dateDataPoczatkowa.SelectedDate, 10,Days)),
+                "Piątek" & Char(10) & Text(DateAdd(dateDataPoczatkowa.SelectedDate, 11,Days)),
+                "Sobota" & Char(10) & Text(DateAdd(dateDataPoczatkowa.SelectedDate, 12,Days)),
+                "Niedziela" & Char(10)  & Text(DateAdd(dateDataPoczatkowa.SelectedDate, 13,Days)),
+            ]
+        TemplateSize: =132
+        Width: =968
+        X: =210
+        Y: =441
+        ZIndex: =6
+
+        Label14_2 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(102, 182, 227, 1)
+            Height: =46
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.Value
+            Width: =128
+            ZIndex: =1
+
+        TextInput4_1 As text:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderThickness: =2
+            Color: =RGBA(0, 0, 0, 1)
+            Default: =""
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            FocusedBorderThickness: =4
+            HintText: ="wpisz godziny dostępności"
+            HoverBorderColor: =RGBA(32, 54, 71, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(205, 209, 213, 1)
+            OnSelect: =Select(Parent)
+            Size: =13
+            Width: =132
+            Y: =59
+            ZIndex: =2
+
