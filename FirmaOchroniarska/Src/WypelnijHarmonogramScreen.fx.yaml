@@ -134,24 +134,6 @@ WypelnijHarmonogramScreen As screen:
             Y: =59
             ZIndex: =2
 
-    Button3 As button:
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(100, 118, 132, 1)
-        FontWeight: =FontWeight.Semibold
-        Height: =58
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: |-
-            =UpdateContext({harmonogram_daty: Concat(galHarmonogram1.AllItems As _gal1, Substitute(_gal1.Value, Char(10), "xx") & "-" & _gal1.txtDataInput.Text) & Concat(galHarmonogram2.AllItems As _gal2, _gal2.Value & "-" & _gal2.txtDateInput2.Text)})
-        Size: =15
-        Text: ="Zapisz dostępność"
-        Width: =200
-        X: =555
-        Y: =605
-        ZIndex: =7
-
     Label1 As label:
         BorderColor: =RGBA(32, 54, 71, 1)
         Color: =RGBA(0, 0, 0, 1)
