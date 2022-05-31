@@ -103,6 +103,37 @@ WypelnijHarmonogramScreen As screen:
         Y: =441
         ZIndex: =6
 
+        lblDzien2 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(102, 182, 227, 1)
+            Height: =46
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.Value
+            Width: =128
+            ZIndex: =1
+
+        txtDateInput2 As text:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderThickness: =2
+            Color: =RGBA(0, 0, 0, 1)
+            Default: =""
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            FocusedBorderThickness: =4
+            HintText: ="wpisz godziny dostępności"
+            HoverBorderColor: =RGBA(32, 54, 71, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(205, 209, 213, 1)
+            OnSelect: =Select(Parent)
+            Size: =13
+            Width: =132
+            Y: =59
+            ZIndex: =2
+
     Label1 As label:
         BorderColor: =RGBA(32, 54, 71, 1)
         Color: =RGBA(0, 0, 0, 1)
@@ -113,4 +144,20 @@ WypelnijHarmonogramScreen As screen:
         Width: =234
         Y: =321
         ZIndex: =8
+
+    Button8 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        FontWeight: =FontWeight.Semibold
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: |-
+            =UpdateContext({harmonogram_daty: Concat(galHarmonogram1.AllItems As _gal1, Substitute(_gal1.Value, Char(10), "-") & "-" & _gal1.txtDataInput.Text & ";;") & Concat(galHarmonogram2.AllItems As _gal2, Substitute(_gal2.Value, Char(10), "-") & "-" & _gal2.txtDateInput2.Text & ";;")})
+        Size: =15
+        Text: ="Przycisk"
+        X: =550
+        Y: =630
+        ZIndex: =9
 
