@@ -9,7 +9,8 @@ ZamowKonwojScreen As screen:
     formKonwoj As form:
         BorderColor: =RGBA(32, 54, 71, 1)
         DataSource: =konwoj
-        DefaultMode: =FormMode.New
+        DefaultMode: |
+            =FormMode.New
         Height: =622
         NumberOfColumns: =1
         Width: =476
@@ -22,7 +23,12 @@ ZamowKonwojScreen As screen:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Title"
             Default: =ThisItem.Title
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: |
+                =If(
+                    czy_edycja = true,
+                    DisplayMode.Edit,
+                    DisplayMode.View
+                )
             DisplayName: =DataSourceInfo([@konwoj],DataSourceInfo.DisplayName,"Title")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -523,7 +529,42 @@ ZamowKonwojScreen As screen:
             Navigate(PodsumowanieKonwojScreen)
         Size: =15
         Text: ="Wyślij"
+        Visible: =!czy_edycja
         X: =732
         Y: =696
         ZIndex: =3
+
+    Button6 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        FontWeight: =FontWeight.Semibold
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: |-
+            =UpdateContext({czy_edycja:true})
+        Size: =15
+        Text: |-
+            ="True
+            "
+        X: =510
+        Y: =696
+        ZIndex: =4
+
+    Button6_1 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        FontWeight: =FontWeight.Semibold
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: |-
+            =UpdateContext({czy_edycja:false})
+        Size: =15
+        Text: ="Fal"
+        X: =316
+        Y: =696
+        ZIndex: =5
 
