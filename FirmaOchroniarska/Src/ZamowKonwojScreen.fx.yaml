@@ -1,5 +1,7 @@
 ZamowKonwojScreen As screen:
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    OnVisible: |-
+        =UpdateContext({czy_edycja:true})
 
     HeaderMain_2 As HeaderMain:
         homeBTN: =Navigate(ZalogowanyScreen)
@@ -115,7 +117,12 @@ ZamowKonwojScreen As screen:
             BorderStyle: =BorderStyle.Solid
             DataField: ="typ_towaru"
             Default: =ThisItem.typ_towaru
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: |-
+                =If(
+                    czy_edycja = true,
+                    DisplayMode.Edit,
+                    DisplayMode.View
+                )
             DisplayName: =DataSourceInfo([@konwoj],DataSourceInfo.DisplayName,"typ_towaru")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -175,7 +182,12 @@ ZamowKonwojScreen As screen:
             BorderStyle: =BorderStyle.Solid
             DataField: ="wartosc_towaru"
             Default: =ThisItem.wartosc_towaru
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: |
+                =If(
+                    czy_edycja = true,
+                    DisplayMode.Edit,
+                    DisplayMode.View
+                )
             DisplayName: =DataSourceInfo([@konwoj],DataSourceInfo.DisplayName,"wartosc_towaru")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -263,7 +275,12 @@ ZamowKonwojScreen As screen:
             BorderStyle: =BorderStyle.Solid
             DataField: ="skad"
             Default: =ThisItem.skad
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: |
+                =If(
+                    czy_edycja = true,
+                    DisplayMode.Edit,
+                    DisplayMode.View
+                )
             DisplayName: =DataSourceInfo([@konwoj],DataSourceInfo.DisplayName,"skad")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -351,7 +368,12 @@ ZamowKonwojScreen As screen:
             BorderStyle: =BorderStyle.Solid
             DataField: ="dokad"
             Default: =ThisItem.dokad
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: |
+                =If(
+                    czy_edycja = true,
+                    DisplayMode.Edit,
+                    DisplayMode.View
+                )
             DisplayName: =DataSourceInfo([@konwoj],DataSourceInfo.DisplayName,"dokad")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -439,7 +461,12 @@ ZamowKonwojScreen As screen:
             BorderStyle: =BorderStyle.Solid
             DataField: ="data_zamowienia"
             Default: =ThisItem.data_zamowienia
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: |
+                =If(
+                    czy_edycja = true,
+                    DisplayMode.Edit,
+                    DisplayMode.View
+                )
             DisplayName: =DataSourceInfo([@konwoj],DataSourceInfo.DisplayName,"data_zamowienia")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50

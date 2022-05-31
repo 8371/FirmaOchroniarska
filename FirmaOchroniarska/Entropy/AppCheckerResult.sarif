@@ -14,32 +14,32 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "WypelnijHarmonogramScreen.Label1.Text"
+                  "fullyQualifiedName": "ZamowKonwojScreen.Button5.OnSelect"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "WypelnijHarmonogramScreen.Label1.Text",
+                  "fullyQualifiedName": "ZamowKonwojScreen.Button5.OnSelect",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 16,
-                  "charOffset": 0,
+                  "charLength": 24,
+                  "charOffset": 34,
                   "snippet": {
-                    "text": "harmonogram_daty"
+                    "text": "PodsumowanieKonwojScreen"
                   }
                 }
               },
               "properties": {
-                "member": "Text",
-                "module": "WypelnijHarmonogramScreen",
-                "type": "WypelnijHarmonogramScreen.Label1"
+                "member": "OnSelect",
+                "module": "ZamowKonwojScreen",
+                "type": "ZamowKonwojScreen.Button5"
               }
             }
           ],
           "message": {
             "arguments": [
-              "harmonogram_daty"
+              "PodsumowanieKonwojScreen"
             ],
             "id": "issue"
           },
@@ -594,306 +594,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "PodsumowanieKonwojScreen.FormViewer2.typ_towaru_DataCard3.DataCardValue22.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "PodsumowanieKonwojScreen.FormViewer2.typ_towaru_DataCard3.DataCardValue22.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "PodsumowanieKonwojScreen",
-                "type": "PodsumowanieKonwojScreen.FormViewer2.typ_towaru_DataCard3.DataCardValue22"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "PodsumowanieKonwojScreen.Gallery6.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "PodsumowanieKonwojScreen.Gallery6.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "PodsumowanieKonwojScreen",
-                "type": "PodsumowanieKonwojScreen.Gallery6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "PodsumowanieKonwojScreen.Gallery6.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "PodsumowanieKonwojScreen.Gallery6.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "PodsumowanieKonwojScreen",
-                "type": "PodsumowanieKonwojScreen.Gallery6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "PodsumowanieKonwojScreen.Form1.Title_DataCard5.DataCardValue23.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "PodsumowanieKonwojScreen.Form1.Title_DataCard5.DataCardValue23.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "PodsumowanieKonwojScreen",
-                "type": "PodsumowanieKonwojScreen.Form1.Title_DataCard5.DataCardValue23"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "PodsumowanieKonwojScreen.Form1.wartosc_towaru_DataCard4.DataCardValue24.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "PodsumowanieKonwojScreen.Form1.wartosc_towaru_DataCard4.DataCardValue24.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "PodsumowanieKonwojScreen",
-                "type": "PodsumowanieKonwojScreen.Form1.wartosc_towaru_DataCard4.DataCardValue24"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "PodsumowanieKonwojScreen.Form1.skad_DataCard4.DataCardValue25.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "PodsumowanieKonwojScreen.Form1.skad_DataCard4.DataCardValue25.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "PodsumowanieKonwojScreen",
-                "type": "PodsumowanieKonwojScreen.Form1.skad_DataCard4.DataCardValue25"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "PodsumowanieKonwojScreen.Form1.dokad_DataCard4.DataCardValue26.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "PodsumowanieKonwojScreen.Form1.dokad_DataCard4.DataCardValue26.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "PodsumowanieKonwojScreen",
-                "type": "PodsumowanieKonwojScreen.Form1.dokad_DataCard4.DataCardValue26"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "PodsumowanieKonwojScreen.Form1.data_zamowienia_DataCard5.DataCardValue27.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "PodsumowanieKonwojScreen.Form1.data_zamowienia_DataCard5.DataCardValue27.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "PodsumowanieKonwojScreen",
-                "type": "PodsumowanieKonwojScreen.Form1.data_zamowienia_DataCard5.DataCardValue27"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "PodsumowanieKonwojScreen.Form1.typ_towaru_DataCard4.DataCardValue28.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "PodsumowanieKonwojScreen.Form1.typ_towaru_DataCard4.DataCardValue28.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "PodsumowanieKonwojScreen",
-                "type": "PodsumowanieKonwojScreen.Form1.typ_towaru_DataCard4.DataCardValue28"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "PodsumowanieKonwojScreen.Form1.Załączniki_DataCard1.DataCardValue29.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "PodsumowanieKonwojScreen.Form1.Załączniki_DataCard1.DataCardValue29.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "PodsumowanieKonwojScreen",
-                "type": "PodsumowanieKonwojScreen.Form1.Załączniki_DataCard1.DataCardValue29"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "PracownikScreen.Gallery2.AccessibleLabel"
                 }
               ],
@@ -1128,6 +828,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "WypelnijHarmonogramScreen.galHarmonogram2.txtDateInput2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "WypelnijHarmonogramScreen.galHarmonogram2.txtDateInput2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "WypelnijHarmonogramScreen",
+                "type": "WypelnijHarmonogramScreen.galHarmonogram2.txtDateInput2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
         },
         {
           "locations": [
