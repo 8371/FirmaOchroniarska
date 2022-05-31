@@ -96,7 +96,7 @@
         "Name": "Label3_1",
         "Parent": "HeaderMain",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 2,
+        "PublishOrderIndex": 109,
         "Rules": [
           {
             "Category": "Data",
@@ -397,7 +397,7 @@
         "Name": "Icon1",
         "Parent": "HeaderMain",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 3,
+        "PublishOrderIndex": 110,
         "Rules": [
           {
             "Category": "Design",
@@ -632,7 +632,7 @@
         "Name": "Label1",
         "Parent": "HeaderMain",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 4,
+        "PublishOrderIndex": 111,
         "Rules": [
           {
             "Category": "Data",
@@ -932,7 +932,7 @@
         "Name": "Image1",
         "Parent": "HeaderMain",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 5,
+        "PublishOrderIndex": 112,
         "Rules": [
           {
             "Category": "Data",
@@ -1196,7 +1196,7 @@
         "Name": "Label1_1",
         "Parent": "HeaderMain",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 6,
+        "PublishOrderIndex": 113,
         "Rules": [
           {
             "Category": "Data",
@@ -1505,7 +1505,7 @@
         "Name": "Icon2",
         "Parent": "HeaderMain",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 7,
+        "PublishOrderIndex": 114,
         "Rules": [
           {
             "Category": "Design",
@@ -1693,7 +1693,7 @@
       "Title",
       "homeBTN"
     ],
-    "LastModifiedTimestamp": "637896139387132675",
+    "LastModifiedTimestamp": "637896138978349139",
     "Name": "HeaderMain",
     "Rules": [
       {
@@ -1773,6 +1773,15 @@
       "PropertyDataTypeKey": "Number",
       "Tooltip": "Właściwość niestandardowa",
       "Type": "{\"Version\":\"1.324\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "uprawnienie",
+      "Hidden": false,
+      "Name": "uprawnienie",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "Właściwość niestandardowa",
+      "Type": "{\"Version\":\"1.324\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -1783,7 +1792,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637896139387132675",
+  "LastModifiedTimestamp": "637896138978349139",
   "Name": "d454709ff8514dc983489c49155c9873",
   "OverridableProperties": {},
   "Version": "637895271042121113"

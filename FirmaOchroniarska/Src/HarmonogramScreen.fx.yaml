@@ -4,6 +4,7 @@ HarmonogramScreen As screen:
     HeaderMain_5 As HeaderMain:
         homeBTN: =Navigate(ZalogowanyScreen)
         Title: ="Harmonogram"
+        uprawnienie: =uprawnienie
 
     Label10 As label:
         Align: =Align.Center

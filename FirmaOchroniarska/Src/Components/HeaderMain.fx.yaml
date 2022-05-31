@@ -3,12 +3,13 @@ HeaderMain As CanvasComponent:
     Height: =100
     homeBTN: =100
     Title: ="Tekst"
+    uprawnienie: ="default"
     Width: =1366
     X: =0
     Y: =0
     ZIndex: =1
 
-    Label3_1 As label:
+    lblTytul As label:
         Align: =Align.Center
         BorderColor: =RGBA(32, 54, 71, 1)
         Color: =RGBA(255, 255, 255, 1)
@@ -20,7 +21,7 @@ HeaderMain As CanvasComponent:
         Width: =1366
         ZIndex: =1
 
-    Image1 As image:
+    imgLogo As image:
         BorderColor: =RGBA(32, 54, 71, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -30,7 +31,7 @@ HeaderMain As CanvasComponent:
         Y: =15
         ZIndex: =2
 
-    Label1 As label:
+    lblImieNazwisko As label:
         BorderColor: =RGBA(32, 54, 71, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -40,13 +41,14 @@ HeaderMain As CanvasComponent:
         X: =100
         ZIndex: =3
 
-    Label1_1 As label:
+    lblUprawnienie As label:
         BorderColor: =RGBA(32, 54, 71, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Height: =29
+        Height: =37
         Size: =12
-        Text: ="Klient"
+        Text: =HeaderMain.uprawnienie
+        Width: =210
         X: =100
         Y: =30
         ZIndex: =5

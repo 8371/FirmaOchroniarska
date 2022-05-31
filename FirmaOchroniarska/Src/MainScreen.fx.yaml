@@ -113,35 +113,3 @@ MainScreen As screen:
         Title: ="Firma Ochroniarska - Security Group"
         ZIndex: =11
 
-    Label3 As label:
-        BorderColor: =RGBA(32, 54, 71, 1)
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Size: =13
-        Text: ="Krystian"
-        X: =59
-        Y: =234
-        ZIndex: =12
-
-    Label4 As label:
-        BorderColor: =RGBA(32, 54, 71, 1)
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Size: =13
-        Text: |-
-            ="Wojtek
-            "
-        X: =59
-        Y: =147
-        ZIndex: =13
-
-    Label3_2 As label:
-        BorderColor: =RGBA(32, 54, 71, 1)
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Size: =13
-        Text: ="Krystian2"
-        X: =59
-        Y: =284
-        ZIndex: =13
-
