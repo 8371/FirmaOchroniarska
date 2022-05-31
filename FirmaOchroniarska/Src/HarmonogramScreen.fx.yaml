@@ -33,8 +33,8 @@ HarmonogramScreen As screen:
                 "Niedziela" & Char(10)  & Text(DateAdd(dateHarmonogramGlowny.SelectedDate, 6,Days)),
             ]
         TemplateSize: =132
-        Width: =968
-        X: =282
+        Width: =980
+        X: =270
         Y: =163
         ZIndex: =4
 
@@ -75,7 +75,7 @@ HarmonogramScreen As screen:
         Gallery3_1 As gallery.galleryHorizontal:
             BorderColor: =RGBA(32, 54, 71, 1)
             Height: =135
-            Items: =Split(LookUp(harmonogram, Title = User().FullName).dyspozycyjno_x015b__x0107_,";;") As Data
+            Items: =Split(LookUp(harmonogram, Title = ThisItem.Title).dyspozycyjność,";;") As Data
             TemplateSize: =132
             Width: =968
             WrapCount: =2
@@ -115,12 +115,23 @@ HarmonogramScreen As screen:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(184, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =If(IsBlank(LookUp(harmonogram, Title = ThisItem.Title).Title),RGBA(185, 188, 192, 50%), RGBA(185, 188, 192, 0))
+            Fill: =RGBA(185, 188, 192, 50%)
             FontWeight: =FontWeight.Bold
             Height: =166
             OnSelect: =Select(Parent)
             Size: =25
             Text: ="Brak uzupełnionego harmonogramu"
+            Visible: |-
+                =If(
+                    IsBlank(
+                        LookUp(
+                            harmonogram,
+                            Title = ThisItem.Title
+                        ).Title
+                    ),
+                    true,
+                    false
+                )
             Width: =972
             X: =150
             ZIndex: =12
