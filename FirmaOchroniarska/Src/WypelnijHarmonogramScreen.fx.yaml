@@ -19,7 +19,7 @@ WypelnijHarmonogramScreen As screen:
         Y: =100
         ZIndex: =2
 
-    Gallery3_1 As gallery.galleryHorizontal:
+    galHarmonogram1 As gallery.galleryHorizontal:
         BorderColor: =RGBA(32, 54, 71, 1)
         Height: =147
         Items: |-
@@ -38,7 +38,7 @@ WypelnijHarmonogramScreen As screen:
         Y: =244
         ZIndex: =3
 
-        Label14_1 As label:
+        lblDzien As label:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -50,7 +50,7 @@ WypelnijHarmonogramScreen As screen:
             Width: =128
             ZIndex: =1
 
-        TextInput4 As text:
+        txtDataInput As text:
             BorderColor: =RGBA(32, 54, 71, 1)
             BorderThickness: =2
             Color: =RGBA(0, 0, 0, 1)
@@ -84,7 +84,7 @@ WypelnijHarmonogramScreen As screen:
         Y: =163
         ZIndex: =4
 
-    Gallery3_2 As gallery.galleryHorizontal:
+    galHarmonogram2 As gallery.galleryHorizontal:
         BorderColor: =RGBA(32, 54, 71, 1)
         Height: =118
         Items: |-
@@ -143,6 +143,8 @@ WypelnijHarmonogramScreen As screen:
         Height: =58
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: |-
+            =UpdateContext({harmonogram_daty: Concat(galHarmonogram1.AllItems As _gal1, _gal1.Value & "-" & _gal1.) & Concat(galHarmonogram2.AllItems As _gal2, _gal2.Value)})
         Size: =15
         Text: ="Zapisz dostępność"
         Width: =200
@@ -154,11 +156,10 @@ WypelnijHarmonogramScreen As screen:
         BorderColor: =RGBA(32, 54, 71, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Height: =108
+        Height: =412
         Size: =13
-        Text: ="Tekst"
-        Width: =449
-        X: =19
-        Y: =623
+        Text: =harmonogram_daty
+        Width: =234
+        Y: =321
         ZIndex: =8
 
