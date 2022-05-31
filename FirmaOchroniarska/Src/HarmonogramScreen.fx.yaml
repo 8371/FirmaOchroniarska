@@ -21,8 +21,17 @@ HarmonogramScreen As screen:
 
     Gallery3 As gallery.galleryHorizontal:
         BorderColor: =RGBA(32, 54, 71, 1)
-        Height: =47
-        Items: =["Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota", "Niedziela"]
+        Height: =61
+        Items: |-
+            =[
+                "Poniedziałek" & Char(10) & dateHarmonogramGlowny.SelectedDate,
+                "Wtorek" & Char(10) & Text(DateAdd(dateHarmonogramGlowny.SelectedDate, 1,Days)),
+                "Środa" & Char(10) & Text(DateAdd(dateHarmonogramGlowny.SelectedDate, 2,Days)),
+                "Czwartek" & Char(10) & Text(DateAdd(dateHarmonogramGlowny.SelectedDate, 3,Days)),
+                "Piątek" & Char(10) & Text(DateAdd(dateHarmonogramGlowny.SelectedDate, 4,Days)),
+                "Sobota" & Char(10) & Text(DateAdd(dateHarmonogramGlowny.SelectedDate, 5,Days)),
+                "Niedziela" & Char(10)  & Text(DateAdd(dateHarmonogramGlowny.SelectedDate, 6,Days)),
+            ]
         TemplateSize: =132
         Width: =968
         X: =282
@@ -62,48 +71,6 @@ HarmonogramScreen As screen:
             Text: =ThisItem.Title
             Y: =20
             ZIndex: =1
-
-        Label17 As label:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(152, 208, 70, 1)
-            Height: =57
-            OnSelect: =Select(Parent)
-            Size: =13
-            Text: ="Wolny"
-            Width: =120
-            X: =167
-            Y: =11
-            ZIndex: =2
-
-        Label17_1 As label:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(152, 208, 70, 1)
-            Height: =57
-            OnSelect: =Select(Parent)
-            Size: =13
-            Text: ="Wolny"
-            Width: =120
-            X: =305
-            Y: =11
-            ZIndex: =3
-
-        Label17_2 As label:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(152, 208, 70, 1)
-            Height: =57
-            OnSelect: =Select(Parent)
-            Size: =13
-            Text: ="Wolny"
-            Width: =120
-            X: =439
-            Y: =11
-            ZIndex: =4
 
         Label17_3 As label:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -181,4 +148,56 @@ HarmonogramScreen As screen:
             X: =991
             Y: =11
             ZIndex: =10
+
+        Gallery3_1 As gallery.galleryHorizontal:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Height: =60
+            Items: =Split(LookUp(harmonogram, Title = User().FullName).dyspozycyjno_x015b__x0107_,";;")
+            TemplateSize: =132
+            Width: =968
+            X: =143
+            Y: =46
+            ZIndex: =11
+
+            Label14_1 As label:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Fill: |-
+                    =If(
+                        uprawnienie = "Pracownik biurowy",
+                        RGBA(
+                            221,
+                            79,
+                            14,
+                            1
+                        ),
+                        RGBA(
+                            152,
+                            208,
+                            70,
+                            1
+                        )
+                    )
+                Height: =35
+                OnSelect: =Select(Parent)
+                Size: =13
+                Text: =ThisItem.Result
+                Width: =128
+                ZIndex: =1
+
+    dateHarmonogramGlowny As datepicker:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        HoverDateFill: =RGBA(205, 209, 213, 1)
+        IconBackground: =RGBA(100, 118, 132, 1)
+        SelectedDateFill: =RGBA(100, 118, 132, 1)
+        Width: =198
+        X: =30
+        Y: =123
+        ZIndex: =6
 
