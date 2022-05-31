@@ -5,7 +5,12 @@ ZamowKonwojScreen As screen:
 
     HeaderMain_2 As HeaderMain:
         homeBTN: =Navigate(ZalogowanyScreen)
-        Title: ="Zamówenie Konwoju"
+        Title: |
+            =If(
+                czy_edycja = true,
+                "Zamówienie konwoju",
+                "Podsumowanie zamówienia"
+            )
         uprawnienie: =uprawnienie
 
     formKonwoj As form:
