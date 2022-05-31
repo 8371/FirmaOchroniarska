@@ -152,7 +152,7 @@ HarmonogramScreen As screen:
         Gallery3_1 As gallery.galleryHorizontal:
             BorderColor: =RGBA(32, 54, 71, 1)
             Height: =60
-            Items: =Split(LookUp(harmonogram, Title = User().FullName).dyspozycyjność,";;")
+            Items: =Split(LookUp(harmonogram, Title = User().FullName).dyspozycyjno_x015b__x0107_,";;")
             TemplateSize: =132
             Width: =968
             X: =143
