@@ -586,9 +586,7 @@ ZamowKonwojScreen As screen:
         FontWeight: =FontWeight.Semibold
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: |-
-            =SubmitForm(formKonwoj)+
-            Navigate(PodsumowanieKonwojScreen)
+        OnSelect: =SubmitForm(formKonwoj)
         Size: =15
         Text: ="Wyślij"
         Visible: =!czy_edycja
