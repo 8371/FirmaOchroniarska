@@ -96,7 +96,7 @@
         "Name": "Label3_1",
         "Parent": "HeaderMain",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 109,
+        "PublishOrderIndex": 2,
         "Rules": [
           {
             "Category": "Data",
@@ -397,7 +397,7 @@
         "Name": "Icon1",
         "Parent": "HeaderMain",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 110,
+        "PublishOrderIndex": 3,
         "Rules": [
           {
             "Category": "Design",
@@ -632,7 +632,7 @@
         "Name": "Label1",
         "Parent": "HeaderMain",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 111,
+        "PublishOrderIndex": 4,
         "Rules": [
           {
             "Category": "Data",
@@ -932,7 +932,7 @@
         "Name": "Image1",
         "Parent": "HeaderMain",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 112,
+        "PublishOrderIndex": 5,
         "Rules": [
           {
             "Category": "Data",
@@ -1196,7 +1196,7 @@
         "Name": "Label1_1",
         "Parent": "HeaderMain",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 113,
+        "PublishOrderIndex": 6,
         "Rules": [
           {
             "Category": "Data",
@@ -1505,7 +1505,7 @@
         "Name": "Icon2",
         "Parent": "HeaderMain",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 114,
+        "PublishOrderIndex": 7,
         "Rules": [
           {
             "Category": "Design",
@@ -1693,7 +1693,7 @@
       "Title",
       "homeBTN"
     ],
-    "LastModifiedTimestamp": "637896138978349139",
+    "LastModifiedTimestamp": "637896139387132675",
     "Name": "HeaderMain",
     "Rules": [
       {
@@ -1783,7 +1783,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637896138978349139",
+  "LastModifiedTimestamp": "637896139387132675",
   "Name": "d454709ff8514dc983489c49155c9873",
   "OverridableProperties": {},
   "Version": "637895271042121113"
