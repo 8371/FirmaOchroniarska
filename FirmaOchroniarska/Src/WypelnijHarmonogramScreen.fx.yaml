@@ -154,7 +154,7 @@ WypelnijHarmonogramScreen As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: |-
-            =UpdateContext({harmonogram_daty: Concat(galHarmonogram1.AllItems As _gal1, _gal1.Value & "-" & _gal1.txtDataInput.Text) & Concat(galHarmonogram2.AllItems As _gal2, _gal2.Value & "-" & _gal2.txtDateInput2.Text)})
+            =UpdateContext({harmonogram_daty: Concat(galHarmonogram1.AllItems As _gal1, Substitute(_gal1.Value, Char(10), "-") & "-" & _gal1.txtDataInput.Text & ";;") & Concat(galHarmonogram2.AllItems As _gal2, Substitute(_gal2.Value, Char(10), "-") & "-" & _gal2.txtDateInput2.Text & ";;")})
         Size: =15
         Text: ="Przycisk"
         X: =550

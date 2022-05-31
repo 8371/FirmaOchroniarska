@@ -14,6 +14,9 @@
     "datasets": {
       "https://workuwmedu.sharepoint.com/sites/FirmaOchroniarska": {
         "dataSources": {
+          "harmonogram": {
+            "tableName": "35700c12-c6f9-4687-ac6d-a0c7a0d45765"
+          },
           "interwencja": {
             "tableName": "2801abfe-bc1d-4b70-bd90-6b64b619b78f"
           },
@@ -33,7 +36,8 @@
     "dataSources": [
       "konwoj",
       "interwencja",
-      "pracownicy"
+      "pracownicy",
+      "harmonogram"
     ],
     "dependencies": {},
     "dependents": [],
