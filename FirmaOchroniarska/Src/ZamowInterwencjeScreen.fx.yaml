@@ -3,7 +3,7 @@ ZamowInterwencjeScreen As screen:
 
     HeaderMain_3 As HeaderMain:
         homeBTN: =Navigate(ZalogowanyScreen)
-        Title: ="Zamówenie Konwoju"
+        Title: ="Zamówienie interwencji"
 
     formInterwencja As form:
         BorderColor: =RGBA(32, 54, 71, 1)
@@ -232,10 +232,12 @@ ZamowInterwencjeScreen As screen:
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
+                Height: =110
                 HoverBorderColor: =RGBA(32, 54, 71, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(205, 209, 213, 1)
                 MaxLength: =Parent.MaxLength
+                Mode: =TextMode.MultiLine
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
@@ -373,6 +375,6 @@ ZamowInterwencjeScreen As screen:
         Size: =15
         Text: ="Wyślij"
         X: =535
-        Y: =606
+        Y: =628
         ZIndex: =3
 

@@ -3,19 +3,32 @@ KontaktScreen As screen:
 
     HeaderMain_4 As HeaderMain:
         homeBTN: =Navigate(MainScreen)
-        Title: ="Kontakt"
+        Title: ="Informacje o firmie"
         uprawnienie: =uprawnienie
 
-    Label9 As label:
-        Align: =Align.Center
+    Image1 As image:
         BorderColor: =RGBA(32, 54, 71, 1)
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Height: =320
-        Size: =30
-        Text: ="KONTAKT"
-        Width: =962
-        X: =175
-        Y: =210
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =768
+        Image: =sec
+        Width: =612
+        X: =754
         ZIndex: =2
+
+    HtmlText1 As htmlViewer:
+        Fill: =RGBA(255, 255, 255, 50%)
+        Height: =628
+        HtmlText: |-
+            ="<b>Rolą firmy “Security Group”</b> jest zapewnienie najlepszych usług ochrony i najbardziej przystępnych cenowo usług ochrony, które są o około 50% niższe od cen konkurencji.
+            <br><br>
+            Nasz zespół ma kilkuletnie w dziedzinie bezpieczeństwa i każdego dnia z dumą budujemy nasz zespół. Zatrudniamy byłych policjantów i weteranów, którzy stanowią większość naszych pracowników. Ciągłe szkolenia naszych pracowników, sprawdzanie przeszłości, rejestry kryminalne, sprawdzanie odcisków palców, a przede wszystkim pasja do obsługi klienta.
+            <br><br>
+            Niezależnie od tego, czy potrzebujesz pracowników ochrony, pojazdów patrolowych, czy też czujnego oka do opieki nad Twoją firmą, zawsze jesteśmy zobowiązani do dostarczania najlepszych rozwiązań w zakresie bezpieczeństwa. “Security Group” będzie ciężko pracować, aby opracować plan, który pozwoli naszym klientom czuć się bezpiecznie i mieć spokój ducha.
+            Świadcząc nasze usługi ochrony będziemy koncentrować się na tym, co ważne, czyli wykrywaniu incydentów przed ich wystąpieniem oraz zapewnianiu szybkiej i skutecznej profesjonalnej reakcji, gdy sytuacja tego wymaga."
+        Size: =15
+        Width: =739
+        X: =15
+        Y: =120
+        ZIndex: =3
 
